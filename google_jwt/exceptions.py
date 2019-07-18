@@ -1,0 +1,2 @@
+class VerificationFailure(Exception):
+    pass

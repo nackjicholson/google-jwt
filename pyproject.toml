@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "google-jwt"
+version = "0.1.0"
+description = "JWT Verification for Google issued JWT tokens, using Googles Well-Known OpenID Configurations and public keys."
+authors = ["William Vaughn <vaughnwilld@gmail.com>"]
+repository = "https://github.com/nackjicholson/google-jwt"
+readme = "README.md"
+keywords = ["google", "JWT", "opendid", "auth", "jose", "JWK"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+python-jose = "^3.0"
+
+[tool.poetry.dev-dependencies]
+black = "=19.3b0"
+flake8 = "^3.7"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ['py37']
